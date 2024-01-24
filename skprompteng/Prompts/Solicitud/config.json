@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Solicitud al modelo",
+  "execution_settings": {
+    "default": {
+      "temperature": 0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "initialPrompt",
+      "description": "Prompt inicial",
+      "required": true
+    },
+    {
+      "name": "request",
+      "description": "Entrada de usuario",
+      "required": true
+    }
+  ]
+}

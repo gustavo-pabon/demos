@@ -1,0 +1,12 @@
+{{$initialPrompt}}
+
+# SUMMARY OF THE HISTORY OF THE CONVERSATION SO FAR
+
+{{ConversationSummaryPlugin.SummarizeConversation $history}}
+
+# END OF SUMMARY OF THE HISTORY OF THE CONVERSATION
+
+# LAST USER INPUT:
+User: {{$request}}
+
+Assistant: 

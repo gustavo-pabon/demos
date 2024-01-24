@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Chat simple",
+  "execution_settings": {
+    "default": {
+      "temperature": 0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "history",
+      "description": "Historial del chat",
+      "required": true
+    },
+    {
+      "name": "request",
+      "description": "Entrada de usuario",
+      "required": true
+    }
+  ]
+}

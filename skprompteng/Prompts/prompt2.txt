@@ -1,0 +1,45 @@
+## Instrucciones
+Determina cuál es la intención del usuario, y presenta el resultado en el siguiente formato:
+
+```json
+{
+    "Intención": {{intención}}
+}
+```
+
+## Opciones
+Debes elegir una de las siguientes intenciones:
+["EnviarCorreo", "EnviarMensaje", "CompletarTarea", "CrearDocumento", "IntenciónDesconocida"]
+
+Si no conoces la intención, no adivines; en su lugar responde con: 
+```json
+{
+    "Intención":"IntenciónDesconocida" 
+}
+```
+
+
+## Ejemplos
+
+Entrada de usuario: Envía un mensaje de agradecimiento por regalo de fin de año
+```json
+{
+    "Intención":"EnviarMensaje" 
+}
+```
+
+Entrada de usuario: Envía la última actualización del estado del proyecto a los interesados
+```json
+{
+    "Intención":"EnviarCorreo" 
+}
+```
+
+---
+
+Pruebas: 
+Envía correo electrónico a mi jefe informando que mañana voy a ausentarme
+Crea un documento de word con el resumen de la junta de hoy
+Crea un documento de excel con el plan de trabajo del proyecto y envíaselo a mi jefe
+Envía whatsapp a mi esposa
+Produce un sonido

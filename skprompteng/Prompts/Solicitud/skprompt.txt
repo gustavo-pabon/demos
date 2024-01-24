@@ -1,0 +1,5 @@
+{{$initialPrompt}}
+
+---
+
+Entrada de usuario: {{$request}}

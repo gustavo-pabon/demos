@@ -1,0 +1,23 @@
+Instrucciones: Determina cuál es la intención del usuario.
+Si no conoces la intención, no adivines; en su lugar responde con "IntenciónDesconocida".
+
+Opciones: EnviarCorreo, EnviarMensaje, CompletarTarea, CrearDocumento, IntenciónDesconocida.
+
+---
+
+Ejemplos:
+
+Entrada de usuario: Envía un mensaje de agradecimiento por regalo de fin de año
+Intención: EnviarMensaje
+
+Entrada de usuario: Envía la última actualización del estado del proyecto a los interesados
+Intención: EnviarCorreo
+
+---
+
+Pruebas: 
+Envía correo electrónico a mi jefe informando que mañana voy a ausentarme
+Crea un documento de word con el resumen de la junta de hoy
+Crea un documento de excel con el plan de trabajo del proyecto y envíaselo a mi jefe
+Envía whatsapp a mi esposa
+Produce un sonido

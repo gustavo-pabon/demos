@@ -1,0 +1,7 @@
+system:
+{{$initialPrompt}}
+
+{{$history}}
+
+user: {{$request}}
+assistant: 
