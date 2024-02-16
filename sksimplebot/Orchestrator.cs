@@ -85,6 +85,7 @@ namespace sksimplebot
                     Console.Write(chunk);
                 }
                 Console.WriteLine();
+                Console.WriteLine();
 
                 // Append to history
                 history.AddUserMessage(request!);

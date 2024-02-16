@@ -17,11 +17,6 @@
       "name": "history",
       "description": "Historial del chat",
       "required": true
-    },
-    {
-      "name": "request",
-      "description": "Entrada de usuario",
-      "required": true
     }
   ]
 }

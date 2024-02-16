@@ -36,28 +36,6 @@ namespace skemaildoc
             #pragma warning disable SKEXP0060
             var planner = new HandlebarsPlanner(new HandlebarsPlannerOptions() { AllowLoops = true });
 
-            // Load prompts
-            var prompts = kernel.CreatePluginFromPromptDirectory("Prompts");
-
-            // Create chat history
-            ChatHistory history = [];
-
-            // Create initial system prompt
-            Console.WriteLine("Sistema > ");
-            var initialPrompt = "";
-            var newLine = "";
-            while (newLine != "fin")
-            {
-                initialPrompt += newLine + "\n";
-                newLine = Console.ReadLine();
-            }
-            history.AddSystemMessage(initialPrompt);
-
-            // Uncomment to see the prompts being used
-            #pragma warning disable SKEXP0004
-            kernel.PromptRendered += (sender, args) => Console.WriteLine("# SENDER:" + sender + "\n# PROMPT:" + args.RenderedPrompt);
-
-
             // Start the conversation
             while (true)
             {
@@ -68,13 +46,9 @@ namespace skemaildoc
                 {
                     break;
                 }
-                history.AddUserMessage(request!);
 
-                // Create the assistant message
-                string message = "";
-
-                // Create the request with all the history
-                string fullRequest = string.Join("\n", history.Select(x => x.Role + ": " + x.Content));
+                var message = "";
+                // Try to create the execution plan
                 try
                 {
                     #pragma warning disable CS8604
@@ -97,8 +71,6 @@ namespace skemaildoc
                 }
                 Console.WriteLine($"assistant: {message}");
 
-                // Append to history
-                history.AddAssistantMessage(message);
             }
         }
     }

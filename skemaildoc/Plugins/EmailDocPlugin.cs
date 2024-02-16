@@ -5,6 +5,7 @@ namespace Plugins
 {
 	public class EmailDocPlugin
 	{
+
 		[KernelFunction, Description("Enviar correo electrónico sin documento adjunto")]
 		public static void SendEmail(
 			[Description("Destinatario del correo electrónico")] string to,
